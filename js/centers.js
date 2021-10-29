@@ -1,30 +1,30 @@
 var homeNavbarButton = document.getElementById("homeNavbar");
-homeNavbarButton.style.backgroundColor = "red";
-
 var aboutNavbarButton = document.getElementById("aboutNavbar");
-aboutNavbarButton.style.backgroundColor = "orange";
-
 var centersNavbarButton = document.getElementById("centersNavbar");
-centersNavbarButton.style.backgroundColor = "yellow";
-
 var registerNavbarButton = document.getElementById("registerNavbar");
-registerNavbarButton.style.backgroundColor = "green";
-
 var contactNavbarButton = document.getElementById("contactNavbar");
-contactNavbarButton.style.backgroundColor = "blue";
 
+function homeColorChange() {
+    homeNavbarButton.style.backgroundColor = "red";
+    homeNavbarButton.style.borderRadius = "10%";
+};
 
-var homeNavbarButton = document.getElementById("homeNavbar");
-homeNavbarButton.style.color = "skyblue";
+function aboutColorChange() {
+    aboutNavbarButton.style.backgroundColor = "orange";
+    aboutNavbarButton.style.borderRadius = "10%";
+};
 
-var aboutNavbarButton = document.getElementById("aboutNavbar");
-aboutNavbarButton.style.color = "skyblue";
+function centersColorChange() {
+    centersNavbarButton.style.backgroundColor = "yellow";
+    centersNavbarButton.style.borderRadius = "10%";
+};
 
-var centersNavbarButton = document.getElementById("centersNavbar");
-centersNavbarButton.style.color = "skyblue";
+function registerColorChange() {
+    registerNavbarButton.style.backgroundColor = "green";
+    registerNavbarButton.style.borderRadius = "10%";
+};
 
-var registerNavbarButton = document.getElementById("registerNavbar");
-registerNavbarButton.style.color = "skyblue";
-
-var contactNavbarButton = document.getElementById("contactNavbar");
-contactNavbarButton.style.color = "skyblue";
+function contactColorChange() {
+    contactNavbarButton.style.backgroundColor = "blue";
+    contactNavbarButton.style.borderRadius = "10%";
+};

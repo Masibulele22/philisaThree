@@ -1,53 +1,30 @@
-
-// homeNavbarButton.addEventListener('click', function() {
-//     // alert("hello!");
-//     homeNavbarButton.style.backgroundColor = "red";
-// });
-
-// function myFunction() {
-//     return document.getElementById("homeNavbar").style.backgroundColor = "yellow";
-// };
-
 var homeNavbarButton = document.getElementById("homeNavbar");
+var aboutNavbarButton = document.getElementById("aboutNavbar");
+var centersNavbarButton = document.getElementById("centersNavbar");
+var registerNavbarButton = document.getElementById("registerNavbar");
+var contactNavbarButton = document.getElementById("contactNavbar");
 
-function myFunction() {
-    homeNavbarButton.style.backgroundColor = "skyblue";
+function homeColorChange() {
+    homeNavbarButton.style.backgroundColor = "red";
     homeNavbarButton.style.borderRadius = "10%";
-
 };
 
+function aboutColorChange() {
+    aboutNavbarButton.style.backgroundColor = "orange";
+    aboutNavbarButton.style.borderRadius = "10%";
+};
 
-// function homeNavbarButton(homeNavbarButton) {
-//     return homeNavbarButton.style.backgroundColor = "red";
-// };
+function centersColorChange() {
+    centersNavbarButton.style.backgroundColor = "yellow";
+    centersNavbarButton.style.borderRadius = "10%";
+};
 
-// homeNavbarButton();
+function registerColorChange() {
+    registerNavbarButton.style.backgroundColor = "green";
+    registerNavbarButton.style.borderRadius = "10%";
+};
 
-
-// var aboutNavbarButton = document.getElementById("aboutNavbar");
-// aboutNavbarButton.style.backgroundColor = "orange";
-
-// var centersNavbarButton = document.getElementById("centersNavbar");
-// centersNavbarButton.style.backgroundColor = "yellow";
-
-// var registerNavbarButton = document.getElementById("registerNavbar");
-// registerNavbarButton.style.backgroundColor = "green";
-
-// var contactNavbarButton = document.getElementById("contactNavbar");
-// contactNavbarButton.style.backgroundColor = "blue";
-
-
-// var homeNavbarButton = document.getElementById("homeNavbar");
-// homeNavbarButton.style.color = "skyblue";
-
-// var aboutNavbarButton = document.getElementById("aboutNavbar");
-// aboutNavbarButton.style.color = "skyblue";
-
-// var centersNavbarButton = document.getElementById("centersNavbar");
-// centersNavbarButton.style.color = "skyblue";
-
-// var registerNavbarButton = document.getElementById("registerNavbar");
-// registerNavbarButton.style.color = "skyblue";
-
-// var contactNavbarButton = document.getElementById("contactNavbar");
-// contactNavbarButton.style.color = "skyblue";
+function contactColorChange() {
+    contactNavbarButton.style.backgroundColor = "blue";
+    contactNavbarButton.style.borderRadius = "10%";
+};
