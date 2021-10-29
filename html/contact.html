@@ -8,28 +8,28 @@
     <title>Contact Us</title>
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
-        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"> 
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styleContact.css">
+
     <script src="https://kit.fontawesome.com/7ba3b477ff.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <img src="https://picsum.photos/1000/900?random=2" id="backgroundImage">
-    
+    <img src="../images/img.jfif" id="backgroundImage">
+
     <div class="containerContact">
         <div class="philisaLogo">
             <img src="../images/logo.png" alt="profile-img">
         </div>
         <nav class="menu">
-            <a class="links" id="homeNavbar" href="../index.html">Home</a>
-            <a class="links" id="aboutNavbar" href="about.html">About</a>
-            <a class="links" id="centersNavbar" href="centers.html">Centers</a>
-            <a class="links" id="registerNavbar" href="register.html">Register</a>
-            <a class="links" id="contactNavbar" href="contact.html">Contact</a>
+            <a class="links" href="../index.html">Home</a>
+            <a class="links" href="about.html">About</a>
+            <a class="links" href="centers.html">Centers</a>
+            <a class="links" href="register.html">Register</a>
+            <a class="links" href="contact.html">Contact</a>
         </nav>
     </div>
     <section class="contact">
-
         <h2>Contact Us</h2>
         <div class="container3">
             <div class="contactInfo">
@@ -55,16 +55,30 @@
                     </div>
                 </div>
             </div>
-            <div class="contactForm">
-                <form action="https://formspree.io/f/mdoyvnbn" method="POST">
+            <div class="contactForm" >
+                <form id="form1" action="https://formspree.io/f/mdoyvnbn" method="POST">
                     <h2>Send Message</h2>
+
                     <div class="inputbox">
-                        <input type="text" name="fullname" required="required">
+                        <input type="text" name="fullname" id="fullname" >
                         <span>Full Name</span>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
                     </div>
                     <div class="inputbox">
-                        <input type="text" name="email" required="required">
+                        <input type="text" name="email" id="email">
                         <span>Email</span>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="phonenumber" id="phonenumber">
+                        <span>Phone Number</span>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
                     </div>
                     <div class="inputbox">
                         <textarea required="required"></textarea>
@@ -80,8 +94,10 @@
 
     <footer>
         <div class="socialLinks">
-            <div id="socialButtons" class="facebookButton"><a href="_blank"><i class="fab fa-facebook fa-2x"></i></a></div>
-            <div id="socialButtons" class="twitterButton"><a href="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+            <div id="socialButtons" class="facebookButton"><a href="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+            </div>
+            <div id="socialButtons" class="twitterButton"><a href="_blank"><i
+                        class="fab fa-twitter-square fa-2x"></i></a>
             </div>
             <div id="socialButtons" class="instagramButton"><a href="_blank"><i
                         class="fab fa-instagram-square fa-2x"></i></a></div>
@@ -91,12 +107,7 @@
             <button class="faqsButton"><a href="faqs.html">Frequently Asked Questions</a></button>
         </div>
     </footer>
-    <script src="../js/home.js"></script>
-    <script src="../js/about.js"></script>
-    <script src="../js/centers.js"></script>
-    <script src="../js/register.js"></script>
-    <script src="../js/contact.js"></script>
-    <script src="../js/faqs.js"></script>
+    <script src="../JS/contact.js"></script>
 </body>
 
 
