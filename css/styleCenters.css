@@ -83,7 +83,7 @@ a {
 }
 
 .menu a:hover {
-  background: skyblue; 
+  /* background: skyblue;  */
   font-size: 150%;
 }
 .row {

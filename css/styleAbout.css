@@ -8,21 +8,6 @@
   padding: 0;
 }
 
-.nav-item a:hover {
-    background: skyblue;
-    font-size: 150%;
-}
-
-#headerContent {
-    height: 20%;
-    padding: 1%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-
-}
-
 .headerContent {
   height: 50%;
   width: auto;
@@ -33,26 +18,39 @@ body {
   margin: 0%;
   border: 0%;
   height: 100vh;
-  background-image: url(../images/back.jpg);
-
 }
 
-.ourTeam h1 {
+#myVideo {
+ position: fixed;
+ right: 0;
+ bottom: 0;
+ min-width: 100%;
+ min-height: 100%;
+ background-image: url("https://picsum.photos/1000/700?random=2");
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+
+
+h1 {
   color: white;
   display: flex;
   justify-content: center;
   position: relative;
 }
-.objective h1 {
-  color: white;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  margin-top: 80px;
-}
 
+.container2 {
+ 
+ bottom: 0;
+ background: rgba(0, 0, 0, 0.5);
+ color: #f1f1f1;
+ padding: 0.5px;
+
+ }
 
  .objective {
+   position: fixed;
    width: 100%;
 
  }
@@ -62,8 +60,6 @@ body {
  display: flex;
  justify-content: center;
  text-align: center;
- position: relative;
- margin-top: 30px;
 }
 
  p{
@@ -81,7 +77,6 @@ body {
    -khtml-box-shadow: 10px 10px 5px #008080;
 
  }
-
 .objective .row{
    width: 100%;
    display: flex;
@@ -92,15 +87,11 @@ body {
    display: flex;
    flex-direction: column;
    justify-content: center;
- }
+ } 
     .row {
       padding: 20px 10px;
       border: 1px ;
-      padding-left: 100px;
-      padding-right: 100px;
-      display: flex;
-      justify-content: center;
-      position: relative;
+      padding-left: 200px;
     }
 
     .imgzoom{
@@ -115,7 +106,7 @@ body {
 
 
     .amanda{
-
+      
       background-image: url(../images/amanda2.jpeg);
       background-image: no-repeat;
       background-size: cover;
@@ -165,26 +156,17 @@ body {
       -webkit-box-shadow: 10px 10px 5px #008080;
       -khtml-box-shadow: 10px 10px 5px #008080;
     }
-    #footContent {
-        height: 20%;
-        padding: 1%;
-        margin: 0%;
-        width: 100%;
-        background-color: rgb(65, 195, 238);
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
-    }
 
-    #copyright {
-        display: flex;
-        justify-content: center;
-    }
-
-    .container2 {
-        height: 100vh;
-        margin: 0%;
-        padding: 0%;
-        border: 0%;
-        width: 100%;
-    }
+    .container-fluid {
+      padding: 2%;
+  }
+  
+  #headerContent {
+      height: 20%;
+      padding: 1%; 
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      flex-direction: row; 
+  
+  }
