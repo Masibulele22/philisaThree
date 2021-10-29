@@ -1,31 +1,9 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-  font-family: 'poppins', sans-serif;
-}
-#myVideo{
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  
-}
-body {
-  background-color: white;
-  padding: 0%;
-  margin: 0%;
-  border: 0%;
-}
 
 .container {
   background-color: #fff;
   position: relative;
   margin: 1%;
   display: flex;
-  
-
   width: auto;
 }
 
@@ -71,6 +49,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: black;
+}
+
 .menu a {
 
   width: 25%;
@@ -83,29 +65,13 @@ a {
 }
 
 .menu a:hover {
-  /* background: skyblue;  */
+  background: skyblue; 
   font-size: 150%;
 }
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: center;
-  background-color: white;
 
-}
-.card {
-  flex: 0 0 200px;
-  margin: 10%;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-  width: 100%;
-  flex-flow: row nowrap;
-  height: 100;
-  border-radius: 25%;
-  ;
-} 
-.card img {
+
+
+.card-block img {
     height: 170px;
     margin-bottom: 15px;
     background-size: cover;
@@ -113,81 +79,39 @@ a {
 
 }
 
-.facility-1 {
-  background-image: url('../images/Harmony_addiction.jpg');
-
+.card-btn {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 1.5rem;
+  font-size: 20px;
+  text-align: center;
+  color: #0072bc;
+  background-color: rgb(222, 235, 232);
+  border: none;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
 }
 
-.facility-2 {
-  background-image: url('../images/houghton-house-.jpg');
+
+.info{
+  text-align: center;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
 }
 
-.facility-3 {
-  background-image: url('../images/ixande.png');
-}
-
-.facility-4 {
-  background-image: url('../images/NurtureNewLands.jpeg');
-
-}
-
-.facility-5 {
-  background-image: url('../images/Oasis-Recovery.jpg');
-}
-
-.facility-6 {
-  background-image: url('../images/Rustenburg\ Addiction\ Center.jpg');
-}
 
 .title {
-  padding: 1%;
-  background-color: white;
+  color: black;
   margin-bottom: 0%;
   text-align: center;
-  font-weight: 900;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 35px;
 }
-.info {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 20px;
-}
-  
-.card button {
-  background: skyblue;
-  border: 0;
-  color: rgb(255, 255, 255);
-  padding: 10px;
-  width: 100%;
-  display: flex;
-  text-align: center;
-}
 
 
-.flex-container{
-  border: 110%;
-  margin: 2% auto;     
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-  margin-bottom: 10%;
-
-
-}
-
-.flex-container .column{
-  border: 110%;
-  height: 80%;
-  margin-bottom: 20%;
-  
-}
-
-.info{
-text-align: center;
-margin-top: 0%;
-font-family: Arial, Helvetica, sans-serif;
-font-weight: 300;
-}
 footer {
   position: relative;
   display: flex;
@@ -236,89 +160,52 @@ footer {
   align-self: center;
 }
 
-.faqs {
-  height: auto;
-  width: 15%;
-  text-align: right;
+
+/*Slides*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-#backgroundImage{
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  background-image: url("https://picsum.photos/800/1000?random=2");
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: center;
-  background-color: white;
-
-}
-.card {
-  flex: 0 0 200px;
-  margin: 0%;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+.wrapper{
   width: 100%;
-  flex-flow: row nowrap;
-  height: 100%;
-
-} 
-.card img {
-  max-width: 100%;
-  background-color: white;
-  
-
-}
-.card .title {
-  background-color: white;
-  margin-bottom: 0%;
-  text-align: left;
-  font-weight: 900;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 120%;
-  
-}
-.card button {
-  background: skyblue;
-  border: 0;
-  color: rgb(255, 255, 255);
-  padding: 10px;
-  width: 100%;
- 
-  
-
-}
-
-.flex-container{
-  border: 110%;
-  width: 70%;
-  margin: 2% auto;     
-  display: flex;
-  justify-content: center;
-  flex-flow: column wrap;
-  margin-bottom: 10%;
-
-
-}
-
-.flex-container .column{
-  border: 110%;
   height: 80%;
-  margin-bottom: 20%;
-  
 }
-
-.info{
+.carousel{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, ));
+}
+.carousel .card-block{
+  color: #fff;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 300;
+  margin: 20px 0;
+  font-size: 90px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+
 }
 
+.owl-dots{
+  text-align: center;
+  margin-top: 40px;
+}
+.owl-dot{
+  height: 15px;
+  width: 45px;
+  margin: 0 5px;
+  outline: none;
+  border-radius: 14px;
+  border: 2px solid #0072bc!important;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+.owl-dot.active,
+.owl-dot:hover{
+  background: #0072bc!important;
+}
