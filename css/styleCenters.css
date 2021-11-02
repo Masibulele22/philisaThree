@@ -1,0 +1,285 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+  }
+  #myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    
+  }
+  body {
+    background-color: white;
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+  }
+  
+  .container {
+    background-color: #fff;
+    position: relative;
+    margin: 1%;
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+    width: auto;
+  }
+  
+  /* .containerTwo {
+    background-color: skyblue;
+    display: flex;
+    justify-content: space-around;
+    height: 70%;
+    width: 100%;
+  } */
+  
+  .philisaLogo {
+    margin-left: 0%;
+    padding-left: 2%;
+    display: flex;
+    height: 70%;
+    width: 40%;
+    align-items: center; 
+    justify-content: start; 
+  
+  }
+  
+  .menu {
+    display: flex;
+    align-content: flex-end;
+    flex-direction: row;
+    height: 30%;
+    width: 50%;
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    
+  }
+  
+  .links {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .menu a {
+  
+    width: 25%;
+    text-decoration: none;
+    align-self: center;
+    color: navy;
+    font-size: 300;
+    display: flex;
+    align-content: flex-end;
+  }
+  
+  .menu a:hover {
+    background: skyblue; 
+    font-size: 150%;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    background-color: white;
+  
+  }
+  .card {
+    flex: 0 0 200px;
+    margin: 10%;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    width: 100%;
+    flex-flow: row nowrap;
+    height: 100;
+  
+  } 
+  .card img {
+    max-width: 100%;
+    background-color: white;
+  
+  }
+  .card .title {
+    padding: 10%;
+    background-color: white;
+    margin-bottom: 0%;
+    text-align: left;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    
+  }
+  .card button {
+    background: skyblue;
+    border: 0;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    width: 100%;
+    display: block;
+  }
+  
+  .flex-container{
+    border: 110%;
+    width: 70%;
+    margin: 2% auto;     
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    margin-bottom: 10%;
+  
+  
+  }
+  
+  .flex-container .column{
+    border: 110%;
+    height: 80%;
+    margin-bottom: 20%;
+    
+  }
+  
+  .info{
+  text-align: center;
+  margin-top: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  }
+  footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 5%;
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  
+  .socialLinks {
+    height: auto;
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #socialButtons {
+    height: auto;
+    width: 60%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
+  
+  #socialButtons.a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0%;
+    margin: 0%;
+  
+  }
+  
+  #socialButtons:hover {
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  .companyCopyright {
+    height: auto;
+    width: 50%;
+    text-align: center;
+    align-self: center;
+  }
+  
+  .faqs {
+    height: auto;
+    width: 15%;
+    text-align: right;
+  }
+  
+  #myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    background-color: white;
+  
+  }
+  .card {
+    flex: 0 0 200px;
+    margin: 0%;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    width: 100%;
+    flex-flow: row nowrap;
+    height: 100;
+  
+  } 
+  .card img {
+    max-width: 100%;
+    background-color: white;
+  
+  }
+  .card .title {
+    padding: 10%;
+    background-color: white;
+    margin-bottom: 0%;
+    text-align: left;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    
+  }
+  .card button {
+    background: skyblue;
+    border: 0;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    width: 100%;
+    display: block;
+  }
+  
+  .flex-container{
+    border: 110%;
+    width: 70%;
+    margin: 2% auto;     
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    margin-bottom: 10%;
+  
+  
+  }
+  
+  .flex-container .column{
+    border: 110%;
+    height: 80%;
+    margin-bottom: 20%;
+    
+  }
+  
+  .info{
+  text-align: center;
+  margin-top: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  }
+  
+  
