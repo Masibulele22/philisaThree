@@ -176,26 +176,56 @@ body {
       -webkit-box-shadow: 10px 10px 5px #008080;
       -khtml-box-shadow: 10px 10px 5px #008080;
     }
-    #footContent {
-        height: 20%;
-        padding: 1%;
-        margin: 0%;
-        width: 125%;
-        background-color: rgb(65, 195, 238);
+    footer {
+        position: relative;
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 5%;
+        width: 100%;
+        padding-left: 1%;
+        padding-right: 1%;
+        color: #fff;
+    }
+
+    .socialLinks {
+        height: auto;
+        width: 15%;
+        display: flex;
         flex-direction: row;
     }
 
-    #copyright {
+    #socialButtons {
+        height: auto;
+        width: 60%;
         display: flex;
+        align-self: center;
         justify-content: center;
     }
 
-    .container2 {
-        height: 100vh;
+    #socialButtons.a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0%;
+        margin: 0%;
+
+    }
+
+    #socialButtons:hover {
         margin: 0%;
         padding: 0%;
-        border: 0%;
-        width: 100%;
+    }
+
+    .companyCopyright {
+        height: auto;
+        width: 50%;
+        text-align: center;
+        align-self: center;
+    }
+
+    .faqs {
+        height: auto;
+        width: 15%;
+        text-align: right;
     }
