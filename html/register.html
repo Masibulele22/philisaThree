@@ -120,6 +120,8 @@
 
         .item:hover p,
         .item:hover i,
+        .choose:hover p,
+        .choose:hover i,
         .question:hover p,
         .question label:hover,
         input:hover::placeholder {
@@ -232,7 +234,7 @@
         }
 
         button:hover {
-            /* background: skyblue; */
+            background: skyblue;
         }
 
         @media (min-width: 990px) {
@@ -271,19 +273,19 @@
 
         <ul class="nav nav-pills col-6">
             <li class="nav-item">
-                <a class="nav-link" id="homeNavbar" onclick="homeColorChange()" href="../index.html">Home</a>
+                <a class="nav-link" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="aboutNavbar" onclick="aboutColorChange()" href="about.html">About</a>
+                <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="centersNavbar" onclick="centersColorChange()" href="centers.html">Centers</a>
+                <a class="nav-link" href="centers.html">Centers</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="registerNavbar" onclick="registerColorChange()" href="register.html">Register</a>
+                <a class="nav-link" href="register.html">Register</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="contactNavbar" onclick="contactColorChange()" href="contact.html">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
             </li>
         </ul>
     </div>
@@ -305,8 +307,8 @@
                 <div class="item">
                     <p>Name</p>
                     <div class="name-item">
-                        <input type="text" name="First" placeholder="Enter first Name" required />
-                        <input type="text" name="Last" placeholder="Enter last Name" required />
+                        <input type="text" name="First" placeholder="Enter first Name"  pattern="[a-zA-Z'-'\s]*" required />
+                        <input type="text" name="Last" placeholder="Enter last Name"  pattern="[a-zA-Z'-'\s]*" required />
                     </div>
                 </div>
                 <div class="item">
@@ -316,10 +318,19 @@
                 </div>
 
                 <div class="choose">
-                    <label> Preferred Rehabilitation Center below:</label><br>
-                    <input type="text" name="Rehabilitation" placeholder="Enter name of Rehabilitation center"
-                        required />
-                </div>
+                    <label> Select your preferred Rehabilitation Center</label><br>
+                    <select>
+                      <option value=""></option>
+                      <option value="1">Nurture Newlands Hospital</option>
+                      <option value="2">Ixande</option>
+                      <option value="3">The Living House</option>
+                      <option value="">The Cedars Cape Manor House</option>
+                      <option value="1">Harmony Addiction and pyschiatric care</option>
+                      <option value="2">Rustenburg Addiction center</option>
+                      <option value="3">Oasis Recovery Center</option>
+                     
+                    </select>
+                  </div><br>
                 <div class="question">
                     <p>Are you living with your family/partner?</p>
                     <div class="question-answer">
@@ -376,11 +387,11 @@
 
                 <div class="item">
                     <p>Cellphone number</p>
-                    <input id="number" name="phoneNumber" type="number" required />
+                    <input id="number"   name="numberers" type="number" />
                 </div>
                 <div class="item">
                     <p>Email</p>
-                    <input type="text" name="name" />
+                    <input type="email" name="name"  id="myEmail" name="email"/>
                 </div>
                 <div class="item">
                     <p>Address</p>
@@ -423,23 +434,18 @@
 
                     <div class="items">
                         <p>Cellphone number</p>
-                        <input id="numbers" name="phoneNumbers" type="number" required />
+                        <input id="numbers" name="numberers" type="number" required />
                     </div>
                 </div>
 
                 <div class="btn-block">
-                    <button type="submit" href="/">Submit</button>
+                    <button type="submit" href="/"  onsubmit=" return formValidation()" name="contact">Submit </button>
                 </div>
             </form>
         </div>
         </form>
     </div>
-    <script src="../js/home.js"></script>
-    <script src="../js/about.js"></script>
-    <script src="../js/centers.js"></script>
-    <script src="../js/register.js"></script>
-    <script src="../js/contact.js"></script>
-    <script src="../js/faqs.js"></script>
+    <script src="../html/register.js"></script>
 </body>
 
 </html>
