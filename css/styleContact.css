@@ -112,6 +112,7 @@ a {
     align-items: center;
     border-radius: 50%;
     font-size:22px ;
+    color: cadetblue;
 }
 .container3 .contactInfo .box .text{
     display: flex;
